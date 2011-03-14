@@ -235,5 +235,6 @@ if __name__ == "__main__":
     else:
         #switch back to the original directory just in case some command needs it
         os.chdir(orig_cwd)
+	sys.path.append(orig_cwd)
         execute_from_command_line()
 
